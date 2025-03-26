@@ -9,9 +9,30 @@ target/
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
 
-# RustRover
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+bin/
+node_modules/
+dist/
+.idea/
+target/
+*~
+*.swp
+*.swo
+.anchor
+test-ledger
+examples/*/Cargo.lock
+examples/**/Cargo.lock
+*/example/Cargo.lock
+tests/*/Cargo.lock
+tests/**/Cargo.lock
+tests/*/yarn.lock
+tests/**/yarn.lock
+.DS_Store
+docs/yarn.lock
+ts/docs/
+cli/npm-package/anchor
+cli/npm-package/*.tgz
+docker-target
+.rollup.cache/
+test-keypair.json
+tsconfig.tsbuildinfo
+.vscode
